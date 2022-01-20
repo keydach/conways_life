@@ -15,7 +15,7 @@ class Cell:
 
     def calc_neighbour_count(self):
         count = 0
-        neighbour_coord = [[-1, -1], [-1, 0], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 0], [1, 1]]
+        neighbour_coord = ((-1, -1), (-1, 0), (-1, 1), (0, -1), (0, 1), (1, -1), (1, 0), (1, 1))
 
         for coord in neighbour_coord:
             cur_x = self.ix + coord[0]
